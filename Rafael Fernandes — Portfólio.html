@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rafael Fernandes — Portfólio</title>
+<meta name="description" content="Portfólio de Rafael Fernandes: automação, dados, IA e cibersegurança.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;700;800&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#eef2f5;--surface:#fff;--ink:#14232e;--muted:#4f6270;--line:#c5d1da;--accent:#2347d9;--signal:#b86e00;
+--sans:"Archivo","Helvetica Neue",Arial,sans-serif;--serif:"Source Serif 4",Georgia,"Times New Roman",serif;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#101c25;--surface:#172733;--ink:#e7eef3;--muted:#9bb0be;--line:#2c4252;--accent:#7f9bff;--signal:#f0b34a;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#101c25;--surface:#172733;--ink:#e7eef3;--muted:#9bb0be;--line:#2c4252;--accent:#7f9bff;--signal:#f0b34a;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:1.0625rem;line-height:1.65}
+a{color:var(--accent)}
+a:focus-visible{outline:3px solid var(--signal);outline-offset:3px}
+.wrap{max-width:60rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:var(--sans);line-height:1.1;margin:0}
+header.hero{padding:4rem 0 3rem;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;gap:2.5rem;grid-template-columns:1fr}
+@media (min-width:52rem){.hero-grid{grid-template-columns:1.2fr 1fr;align-items:center}}
+h1{font-size:clamp(2.6rem,8vw,4.8rem);font-weight:800;letter-spacing:-.03em}
+.role{font-family:var(--sans);font-weight:500;font-size:1.15rem;color:var(--muted);margin:1rem 0 1.25rem}
+.lead{max-width:34rem;margin:0 0 1.5rem}
+.links{display:flex;flex-wrap:wrap;gap:.6rem}
+.btn{font-family:var(--sans);font-weight:700;font-size:.95rem;text-decoration:none;padding:.65rem 1.1rem;border:2px solid var(--ink);color:var(--ink);border-radius:2px}
+.btn.main{background:var(--ink);color:var(--bg)}
+.btn:hover{border-color:var(--accent)}
+/* alimentador: lista de projetos como diagrama unifilar */
+.feeder{list-style:none;margin:0;padding:0 0 0 1.6rem;border-left:3px solid var(--ink);position:relative}
+.feeder li{position:relative;padding:.55rem 0}
+.feeder li::before{content:"";position:absolute;left:calc(-1.6rem - 10px);top:50%;width:17px;height:17px;margin-top:-8px;border:3px solid var(--ink);background:var(--ink);border-radius:50%}
+.feeder li.open::before{background:var(--bg)}
+.feeder a{font-family:var(--sans);font-weight:700;color:var(--ink);text-decoration:none}
+.feeder a:hover{color:var(--accent)}
+.feeder small{display:block;font-family:var(--serif);color:var(--muted);font-size:.9rem}
+.legend{font-size:.85rem;color:var(--muted);margin:1rem 0 0}
+section{padding:3.5rem 0;border-bottom:1px solid var(--line)}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);font-weight:700;letter-spacing:-.02em;margin-bottom:1.5rem}
+.two{display:grid;gap:2rem;grid-template-columns:1fr}
+@media (min-width:52rem){.two{grid-template-columns:1fr 1fr}}
+.project{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--ink);padding:1.5rem 1.5rem 1.4rem;margin-bottom:1.5rem;border-radius:2px}
+.project.open{border-left-color:var(--signal)}
+.project h3{font-size:1.4rem;font-weight:700;margin-bottom:.4rem}
+.status{font-family:var(--sans);font-weight:700;font-size:.85rem;color:var(--muted);margin:0 0 .8rem}
+.project.open .status{color:var(--signal)}
+.project p{margin:.5rem 0}
+.tags{list-style:none;padding:0;margin:1rem 0 .8rem;display:flex;flex-wrap:wrap;gap:.4rem}
+.tags li{font-family:var(--sans);font-size:.82rem;font-weight:500;border:1px solid var(--line);padding:.15rem .6rem;border-radius:99px}
+.note{font-size:.92rem;color:var(--muted)}
+dl{margin:0}
+dt{font-family:var(--sans);font-weight:700;margin-top:1rem}
+dd{margin:.15rem 0 0;color:var(--muted)}
+ul.plain{padding-left:1.1rem;margin:0}
+ul.plain li{margin:.35rem 0}
+footer{padding:2.5rem 0 3rem;color:var(--muted);font-size:.95rem}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<header class="hero">
+<div class="wrap hero-grid">
+<div>
+<h1>Rafael Fernandes</h1>
+<p class="role">Engenharia de Software · automação, dados e cibersegurança</p>
+<p class="lead">Estudante de Engenharia de Software e estagiário em telecontrole no setor elétrico. Construo automações que tiram trabalho repetitivo das pessoas e uso dados e IA para encontrar o que merece atenção.</p>
+<div class="links">
+<a class="btn main" href="#projetos">Ver projetos</a>
+<a class="btn" href="https://github.com/rafadani07">GitHub</a>
+<a class="btn" href="https://linkedin.com/in/rafael-dani07">LinkedIn</a>
+</div>
+</div>
+<div>
+<ul class="feeder" aria-label="Índice de projetos">
+<li class="open"><a href="#scada">Robô de verificação SCADA/e-terra</a><small>Em desenvolvimento</small></li>
+<li><a href="#n8n">Agente de IA para triagem de alertas</a><small>n8n</small></li>
+<li><a href="#logs">Analisador de logs com IA</a><small>Python</small></li>
+<li><a href="#powerbi">Dashboard do setor elétrico</a><small>Power BI</small></li>
+<li><a href="#ocr">Leitura de telas com OCR</a><small>Python</small></li>
+</ul>
+<p class="legend">Círculo cheio: concluído. Círculo vazado: em desenvolvimento.</p>
+</div>
+</div>
+</header>
+
+<main>
+<section id="sobre">
+<div class="wrap two">
+<div>
+<h2>Sobre</h2>
+</div>
+<div>
+<p>Atuo na área de Sistemas de Telecontrole da Enel Brasil, onde apoio a verificação de equipamentos e a análise de divergências entre identificações, equipamentos e circuitos, e tenho contato com SCADA, PowerOn, GIS e ADMS.</p>
+<p>Na faculdade, represento o grupo Cyber Squad da Universidade São Judas Tadeu. Sou técnico em Mecatrônica pelo SENAI e busco estágio em TI, com foco em cibersegurança, desenvolvimento, automação e infraestrutura.</p>
+</div>
+</div>
+</section>
+
+<section id="projetos">
+<div class="wrap">
+<h2>Projetos</h2>
+
+<article class="project open" id="scada">
+<h3>Robô de automação para verificação de equipamentos SCADA/e-terra</h3>
+<p class="status">Em desenvolvimento</p>
+<p><strong>Problema:</strong> a verificação de equipamentos em ambiente SCADA envolve muitas consultas manuais e repetitivas.</p>
+<p><strong>Solução:</strong> scripts PowerShell leem listas de equipamentos em CSV e automatizam a interação com a interface do e-terra/WebFG SCADA, pesquisando cada equipamento pelo padrão de consulta DISP. O robô captura telas e analisa indicadores visuais (caracteres “X”) para apontar possíveis divergências, e organiza os resultados no Excel para a conferência e os relatórios.</p>
+<p><strong>Próximos passos:</strong> integração com fontes de dados via OLE DB (somente leitura) e avaliação de OCR.</p>
+<ul class="tags"><li>PowerShell 5.1</li><li>CSV</li><li>Excel</li><li>Automação de interface</li><li>Windows Server / RDP</li></ul>
+<p class="note">Por se tratar de um ambiente corporativo, o código e as imagens reais não são públicos. O repositório mostrará uma versão genérica e anonimizada da abordagem.</p>
+<a href="https://github.com/rafadani07">Ver no GitHub</a>
+</article>
+
+<article class="project" id="n8n">
+<h3>Agente de IA para triagem de e-mails e alertas</h3>
+<p class="status">Concluído</p>
+<p>Fluxo no n8n que recebe e-mails ou alertas, usa um modelo de linguagem para classificá-los por tipo e urgência, e entrega um resumo curto de cada ocorrência. A ideia nasceu da rotina de telecontrole, em que o volume de avisos dificulta ver o que é importante.</p>
+<ul class="tags"><li>n8n</li><li>LLM</li><li>Automação de fluxos</li></ul>
+<a href="https://github.com/rafadani07">Ver no GitHub</a>
+</article>
+
+<article class="project" id="logs">
+<h3>Analisador de logs com Python e IA</h3>
+<p class="status">Concluído</p>
+<p>Ferramenta que lê arquivos de log, agrupa os eventos e usa IA para destacar padrões suspeitos, como tentativas repetidas de acesso ou comportamentos fora do normal. Une meu interesse em cibersegurança com análise de dados.</p>
+<ul class="tags"><li>Python</li><li>Cibersegurança</li><li>Análise de logs</li><li>IA</li></ul>
+<a href="https://github.com/rafadani07">Ver no GitHub</a>
+</article>
+
+<article class="project" id="powerbi">
+<h3>Dashboard com dados abertos do setor elétrico</h3>
+<p class="status">Concluído</p>
+<p>Painel interativo em Power BI construído a partir de dados abertos da ANEEL, com indicadores e filtros para explorar o setor elétrico brasileiro.</p>
+<ul class="tags"><li>Power BI</li><li>Dados abertos</li><li>Validação de dados</li></ul>
+<a href="https://github.com/rafadani07">Ver no GitHub</a>
+</article>
+
+<article class="project" id="ocr">
+<h3>Leitura de telas com OCR</h3>
+<p class="status">Concluído</p>
+<p>Mini-projeto em Python que extrai texto de capturas de tela com OCR. Surgiu como estudo para o robô SCADA, para avaliar a leitura de informações da tela além da análise visual de indicadores.</p>
+<ul class="tags"><li>Python</li><li>OCR</li><li>Processamento de imagem</li></ul>
+<a href="https://github.com/rafadani07">Ver no GitHub</a>
+</article>
+</div>
+</section>
+
+<section id="competencias">
+<div class="wrap two">
+<div><h2>Competências</h2></div>
+<dl>
+<dt>Programação</dt><dd>Python e JavaScript (intermediário), CSS (avançado), Java (básico), lógica de programação.</dd>
+<dt>Dados e automação</dt><dd>PowerShell 5.1, automação de tarefas no Windows, CSV e Excel, Power BI (intermediário), n8n.</dd>
+<dt>Redes e cibersegurança</dt><dd>Fundamentos de redes e de cibersegurança, noções de infraestrutura e hardware.</dd>
+<dt>Setor elétrico</dt><dd>SCADA, e-terra/WebFG, PowerOn, GIS e ADMS na prática do estágio.</dd>
+</dl>
+</div>
+</section>
+
+<section id="formacao">
+<div class="wrap two">
+<div><h2>Formação e cursos</h2></div>
+<div>
+<ul class="plain">
+<li><strong>Engenharia de Software</strong>, Universidade São Judas Tadeu, conclusão prevista em julho de 2029.</li>
+<li><strong>Técnico em Eletrônica</strong>, curso em andamento.</li>
+<li><strong>Técnico em Mecatrônica</strong>, SENAI, concluído em 2024.</li>
+<li><strong>Cibersegurança:</strong> Programa Hacker do Bem (Nivelamento, 80 h, e Básico, 65 h) e Introdução à Cibersegurança (Cisco).</li>
+<li><strong>Redes e infraestrutura:</strong> Basic Network Technician, Basic Networking Concepts, Computer Hardware Fundamentals e Introduction to IoT (Cisco).</li>
+<li><strong>Dados e automação:</strong> Bootcamp de IA com n8n (Santander), Power BI (Fundação Bradesco) e Excel in Practice (SENAI).</li>
+<li><strong>Outros:</strong> NR-10 (Enel Brasil). Inglês nível A1, curso em andamento na Speex.</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section id="contato" style="border-bottom:0">
+<div class="wrap two">
+<div><h2>Contato</h2></div>
+<div>
+<p>Estou em busca de estágio em TI. Se algum projeto aqui chamou sua atenção, vamos conversar.</p>
+<div class="links">
+<a class="btn main" href="mailto:rafaeldfer12@gmail.com">rafaeldfer12@gmail.com</a>
+<a class="btn" href="https://linkedin.com/in/rafael-dani07">LinkedIn</a>
+<a class="btn" href="https://github.com/rafadani07">GitHub</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer><div class="wrap">São Paulo, SP</div></footer>
+</body>
+</html>
